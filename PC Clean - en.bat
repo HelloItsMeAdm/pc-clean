@@ -29,7 +29,7 @@ if %option%==2 exit
 
 if %option%==3 rmdir /s /q C:\Users\spravce\AppData\Local\Temp
 if %option%==3 cls
-if %option%==3 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Folder %Temp% was cleared','PC Clean!','Ok','Info')
+if %option%==3 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Folder %Temp% was cleared!','PC Clean!','Ok','Info')
 if %option%==3 exit
 
 if %option%==all rmdir /s /q C:\Windows\Temp
