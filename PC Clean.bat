@@ -1,5 +1,5 @@
 @echo off
-echo Vytvoril Vojtech Adam 13/09/2020
+echo Made by Vojtech Adam 13/09/2020
 echo.
 echo P)ppppp    C)ccc          C)ccc  l)L                          
 echo P)    pp  C)   cc        C)   cc  l)                          
@@ -11,32 +11,32 @@ echo.
 echo 1 = C:\Windows\Temp
 echo 2 = C:\Windows\Prefetch
 echo 3 = %temp%
-echo All = Smaze vsechny nadbytkove soubory
+echo All = Deletes all unnecessary files
 echo.
-set /p option=Vyber si moznost: 
+set /p option=Choose an option: 
 
 if %option%==1 rmdir /s /q C:\Windows\Temp
 if %option%==1 cls
-if %option%==1 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Slozka C:\Windows\Temp byla vycistena!','PC Clean','Ok','Info')
+if %option%==1 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Folder C:\Windows\Temp was cleared!','PC Clean','Ok','Info')
 if %option%==1 exit
 
 
 if %option%==2 rmdir /s /q C:\Windows\Prefetch
 if %option%==2 cls
-if %option%==2 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Slozka C:\Windows\Prefetch byla vycistena!','PC Clean','Ok','Info')
+if %option%==2 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Folder C:\Windows\Prefetch was cleared!','PC Clean','Ok','Info')
 if %option%==2 exit
 
 
 if %option%==3 rmdir /s /q C:\Users\spravce\AppData\Local\Temp
 if %option%==3 cls
-if %option%==3 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Slozka %Temp% byla vycistena','PC Clean!','Ok','Info')
+if %option%==3 PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Folder %Temp% was cleared','PC Clean!','Ok','Info')
 if %option%==3 exit
 
 if %option%==all rmdir /s /q C:\Windows\Temp
 if %option%==all rmdir /s /q C:\Windows\Prefetch
 if %option%==all rmdir /s /q C:\Users\spravce\AppData\Local\Temp
 if %option%==all cls
-if %option%==all PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Vsechny nadbytkove soubory byly vycisteny!','PC Clean','Ok','Info')
+if %option%==all PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('All redundant files have been deleted!','PC Clean','Ok','Info')
 if %option%==all exit
 
 
@@ -44,5 +44,5 @@ if %option%==All rmdir /s /q C:\Windows\Temp
 if %option%==All rmdir /s /q C:\Windows\Prefetch
 if %option%==All rmdir /s /q C:\Users\spravce\AppData\Local\Temp
 if %option%==All cls
-if %option%==All PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('Vsechny nadbytkove soubory byly vycisteny!','PC Clean','Ok','Info')
+if %option%==All PowerShell -Command "Add-Type -AssemblyName PresentationFramework;[System.Windows.MessageBox]::Show('All redundant files have been deleted!','PC Clean','Ok','Info')
 if %option%==All exit
